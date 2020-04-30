@@ -1,0 +1,82 @@
+A_________________________SBEACH model setup_____________________A
+A.3 Total number of calc cells and position of landward boundary: ndx, xstart
+	252	-97
+A.4 Grid type (0 = constant, 1 = variable): idx
+	1
+A.5 if grid is variable continue to A.8
+A.6 Constant grid cell width: dxc
+	0
+A.7 if grid is constant continue to A.10
+A.8 Number of different grid cell regions: ngrid
+	3
+A.9 Grid cell widths and number of cells in each region (landward to seaward) dxv[i],ndxv[i],i=1,ngrid
+1.5240185320653499 96 3.0480370641306997 84 6.0960741282613995 72
+A.10 Number of time steps and value of time steps in minutes: ndt,dt
+	1440 3
+A.11 Number of time steps for intermediate output: nwr
+	3
+A.12 Time steps of intermediate output: wri[i],i=1,nwr
+360 720 960
+A.13 Is a measured profile available for comparison? 1=Yes, 2=No: icomp
+	1
+A.14 Three profile elevation contours (maximum horizontal recession of each will be determined): elv1,elv2,elv3
+	3 1 -1
+A.15 Three erosion profile depths and ref elevation: epd1, epd2, epd3, refelev
+	1 0 0 0
+A.16 Transport rate coefficient: k (m^4/N)
+	1.5e-06
+A.17 Coefficietn for slope dependent term: eps (m^2/s)
+	0.002
+A.18 Transport rate decay coefficient multiplier: lamm
+	0.5
+A.19 Water temp in degrees c: tempc
+	15
+B__________________________Waves,Water,Wind______________________B
+B.1 Wave type (Monochromatic =1, var = 2): wvtype
+	2
+B.2 Wave height and period input (constant=0, variable=1) iwave
+	1
+B.6 Time step of variable wave height and period (minutes)
+	60
+B.7 Wave anlge input (constant = 0, variable = 1): iang
+	0
+B.8 Constant wave angle: zin
+	0
+B.11 Time step of variable wave angle input in minutes:dtang
+	0
+B.12 Water depth of input waves (deepwater=0): dmeas
+	33.8
+B.13 Is randomization of input wave height desired? irand
+	1
+B.15 Seed value for randomization and percent of variability: iseed, rperc
+	7878 20
+B.16 Total water elevation input (constant =0, variable = 1) ielev
+	1
+B.20 Time step of variale total water elevation input in minutes: dtelev
+	60
+B.21 Wind speed and angle input (constant = 0, variable = 1) iwind
+	0
+B.23 Constant wind speed and angle: w, zwind
+	0 0
+B.25 Time step variable wind speed and angle
+	0
+C________________________Beach___________________________________C
+C.1 Type of input profile (arbitrary =1, schematized =2): tpin
+	1
+C.4 Depth corresponding to the landward end of the surfzone: dfs
+	0.304
+C.5 Effective grain size diameter in mm: d50
+	0.35
+C.6 Maximum profile slope prior to avalanching in degrees: bmax
+	17.2
+D________________________Beach Fill______________________________D
+D.1 Is a beach fill present? (No=0, Yes=1): ibchfill
+	0
+E________________________Seawall/Revetment_______________________E
+E.1 Is a seawall present? (No=0, Yes = 1): iswall
+	0
+F________________________Hard Bottom_______________________F
+F.1 Is a hard bottom present? (No=0, Yes = 1): ihbot
+	1
+F.2 Dondrift scale factor: scf
+	2
